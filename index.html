@@ -10,10 +10,13 @@
 </head>
 
 <body>
+
     <header class="header">
         <img src="./header/logo.png" alt="Logo Souza" class="logo">
 
-        <a href="#contato" class="btn-contato">Entrar em contato</a>
+        <a href="#contato" class="btn-contato">
+            Entrar em contato <span style="margin-left: 8px;">→</span>
+        </a>
 
         <nav class="nav">
             <a href="#" class="nav-item active">Home</a>
@@ -42,15 +45,12 @@
             </p>
 
             <div class="stats">
-                <span>+20 Clientes</span>
-                <span>+10 Anos</span>
-                <span>+10 Cidades</span>
+                <span><span class="mais">+</span><strong class="contador" data-max="20">0</strong> Clientes</span>
+                <span><span class="mais">+</span><strong class="contador" data-max="20">0</strong> Anos</span>
+                <span><span class="mais">+</span><strong class="contador" data-max="20">0</strong> Cidades</span>
             </div>
         </div>
-        <div class="bandeiras">
-            <img src="./header/brasil.jpg" alt="Brasil">
-            <img src="./header/parana.png" alt="Parana">
-        </div>
+
     </header>
 
     <main class="main">
@@ -58,7 +58,10 @@
 
             <!-- LADO ESQUERDO -->
             <div class="lado-esquerdo">
-                <h1>Souza, a empresa que só <br> tende a crescer</h1>
+                <h1>
+                    <span>Souza</span>, a empresa que só <br>
+                    tende a <span id="palavra-mutavel" style="color: var(--verde-claro);">crescer</span>
+                </h1>
 
                 <p class="descricao">
                     A Souza atua há mais de XX anos no setor industrial, oferecendo
@@ -88,8 +91,158 @@
                     <li>Tecnologia</li>
                 </ul>
             </div>
+        </div>
+
+
+        <section class="secao-servicos">
+            <h1 class="titulo-servicos">Serviços</h1>
+        </section>
+
+
+        <section class="cards-servicos">
+
+            <div class="card-servico">
+                <div class="overlay-topo">
+                    <h3>Título do Serviço</h3>
+                    <p>Nome do serviço</p>
+                </div>
+
+                <div class="btn-mais">+</div>
+            </div>
+
+            <div class="card-servico">
+                <div class="overlay-topo">
+                    <h3>Título do Serviço</h3>
+                    <p>Nome do serviço</p>
+                </div>
+
+                <div class="btn-mais">+</div>
+            </div>
+
+            <div class="card-servico">
+                <div class="overlay-topo">
+                    <h3>Título do Serviço</h3>
+                    <p>Nome do serviço</p>
+                </div>
+
+                <div class="btn-mais">+</div>
+            </div>
+
+        </section>
+
+
+        <section class="secao-servicos">
+            <h1 class="titulo-servicos">Clientes</h1>
+        </section>
+
+        <section class="secao-carrossel">
+
+            <div class="carrossel">
+                <div class="slide active">
+                    <img src="body/newholland.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="body/newholland.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="body/newholland.png" alt="">
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="secao-servicos">
+            <h1 class="titulo-servicos">Projetos</h1>
+        </section>
+
+        <section class="stack-section">
+            <div class="stack">
+
+                <div class="stack-card active">
+                    <video src="./videos/13751975_3840_2160_50fps.mp4" autoplay muted loop playsinline></video>
+                    <h2>Manutenção Industrial</h2>
+                </div>
+
+                <div class="stack-card">
+                    <video src="./videos/14038210_3840_2160_24fps.mp4" autoplay muted loop playsinline></video>
+                    <h2>Montagem Especializada</h2>
+                </div>
+
+                <div class="stack-card">
+                    <video src="./videos/6184893-hd_1920_1080_30fps.mp4" autoplay muted loop playsinline></video>
+                    <h2>Montagem de portões</h2>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
 
     </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <img src="header/logo.png" alt="Logo Souza" class="footer-logo">
+                <p class="footer-texto">
+                    Líder em soluções de montagem e manutenção industrial, entregando qualidade e segurança em cada
+                    projeto.
+                </p>
+                <div class="footer-detalhe-bandeiras">
+                    <img src="./header/brasil.jpg" alt="Brasil">
+                    <img src="./header/parana.png" alt="Paraná">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Fale Conosco</h3>
+                <div class="footer-redes">
+                    <a href="#" class="rede-box"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="rede-box"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+                <p class="contato-info">contato@souzamontagem.com.br</p>
+                <p class="contato-info">+55 (00) 0000-0000</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Souza Montagem Industrial. Todos os direitos reservados.</p>
+            <p class="creditos">
+                Criado por
+                <a href="https://kawwav.github.io/Kawwa/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnCtgvZrfJ0nOzHfget9N29mVHd4GzgVH4bDKexeGk-ZWPsRU0XTlHsAo6Ung_aem_bZNpixHuJ2-_h9Y9dMbF3A"
+                    target="_blank">
+                    Vinicius Kawasugui Santiago
+                </a>
+            </p>
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 
 
 </body>
